@@ -1,0 +1,132 @@
+:root {
+    --background-color: #504746;
+    --cash-register: #0A014F;
+    --register-buttons: #388697;
+}
+
+*, *::before, *::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: inherit;
+	/* border: 0.5px solid black; */
+}
+
+html {
+    height: 100%;
+    /*background-color: var(--background-color);*/
+}
+
+html {
+	font-family: Arial, sans-serif;
+    letter-spacing: 1.5px;
+	font-size: 62.5%;
+    background-color: var(--background-color);
+    color: white;
+}
+
+body, main, .input-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+	box-sizing: border-box;
+	font-size: 1.6rem;
+    padding: 100px;
+}
+
+h1, h2 {
+    margin: 20px;
+    text-align: center;
+}
+
+.input-div {
+    margin: 20px;
+}
+
+#input-label, #cash {
+    width: 100%;
+}
+
+#cash {
+    margin-top: 10px;
+    height: 30px;
+}
+
+#purchase-btn {
+    height: 30px;
+    width: 100px;
+    margin: 10px;
+}
+
+#purchase-btn:hover {
+    cursor: pointer;
+}
+
+.price-screen {
+    width: 250px;
+    line-height: 30px;
+    text-align: center;
+    border: 15px solid var(--cash-register);
+    margin-left: 30px;
+}
+
+.register-connector {
+    width: 40px;
+    border: 15px solid var(--cash-register);
+    margin-left: 60px;
+}
+
+.register-top {
+    border: 20px solid var(--cash-register);
+    width: 350px;
+    border-radius: 50px 50px 0 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--cash-register);
+}
+
+.register-buttons {
+    width: 30%;
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    padding: 10px;    
+}
+
+.register-button {
+    width: 20px;
+    height: 20px;
+    background-color: var(--register-buttons);
+    border-radius: 3px;
+}
+
+.register-cash {
+    width: 60%;
+    background-color: white;
+    padding: 10px;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.register-bottom {
+    width: 350px;
+    margin-top: 10px;
+    background-color: var(--cash-register);
+
+}
+
+.register-knob {
+    width: 20px;
+    height: 20px;
+    background-color: var(--register-buttons);
+    border-radius: 20px;
+    margin: 15px auto;
+}
+
+p {
+    line-height: 1.3;
+}
