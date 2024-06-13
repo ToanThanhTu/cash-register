@@ -42,6 +42,10 @@ h1, h2 {
     text-align: center;
 }
 
+#change-due {
+    text-align: center;
+}
+
 .input-div {
     margin: 20px;
 }
