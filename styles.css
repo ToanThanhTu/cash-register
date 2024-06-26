@@ -1,29 +1,29 @@
+/* Define root variables for colors */
 :root {
     --background-color: #504746;
     --cash-register: #0A014F;
     --register-buttons: #388697;
 }
 
+/* Apply global box-sizing rule and remove margins and padings */
 *, *::before, *::after {
 	padding: 0;
 	margin: 0;
 	box-sizing: inherit;
-	/* border: 0.5px solid black; */
+	/* border: 0.5px solid black; */ /* Debugging borders */
 }
 
-html {
-    height: 100%;
-    /*background-color: var(--background-color);*/
-}
-
+/* Set basic styles for the HTML element */
 html {
 	font-family: Arial, sans-serif;
     letter-spacing: 1.5px;
 	font-size: 62.5%;
     background-color: var(--background-color);
     color: white;
+    height: 100%;
 }
 
+/* Set flexbox properties for body, main, and .input-div to center elements */
 body, main, .input-div {
     display: flex;
     flex-direction: column;
@@ -31,17 +31,20 @@ body, main, .input-div {
     justify-content: center;
 }
 
+/* Set box-sizing to border-box */
 body {
 	box-sizing: border-box;
 	font-size: 1.6rem;
     padding: 100px;
 }
 
+/* Header styles */
 h1, h2 {
     margin: 20px;
     text-align: center;
 }
 
+/* Change due section styles */
 #change-due {
     text-align: center;
 }
